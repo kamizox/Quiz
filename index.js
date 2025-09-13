@@ -62,8 +62,20 @@ function checkCorrect(event)
 
 function showResult() {
     document.body.innerHTML = `
-        <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;background-color:rgb(88,59,221);color:white;font-family:sans-serif;text-align:center;">
-            <h1>🎉 Quiz Finished 🎉</h1>
+        <div 
+        style="display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:500px;
+        width:300px;
+        background-color:rgb(88,59,221);
+        color:white;
+        border-radius:15px;
+        font-family:sans-serif;
+        text-align:center;
+        ">
+            <h1> Quiz Finished </h1>
             <h2>Total Questions: ${quiz.length}</h2>
             <h2>Correct Answers: ${correctAnswers}</h2>
             <h2>Wrong Answers: ${wrongAnswers}</h2>
